@@ -1,0 +1,519 @@
+[
+    {
+        "swiper1": [
+            {
+                "id": 1,
+                "title": "北京"
+            },
+            {
+                "id": 2,
+                "title": "上海"
+            },
+            {
+                "id": 3,
+                "title": "天津"
+            },
+            {
+                "id": 4,
+                "title": "重庆"
+            },
+            {
+                "id": 5,
+                "title": "河北"
+            },
+            {
+                "id": 6,
+                "title": "山西"
+            },
+            {
+                "id": 7,
+                "title": "河南"
+            },
+            {
+                "id": 8,
+                "title": "辽宁"
+            },
+            {
+                "id": 9,
+                "title": "吉林"
+            },
+            {
+                "id": 10,
+                "title": "黑龙江"
+            },
+            {
+                "id": 11,
+                "title": "内蒙古"
+            },
+            {
+                "id": 12,
+                "title": "江苏"
+            },
+            {
+                "id": 13,
+                "title": "山东"
+            },
+            {
+                "id": 14,
+                "title": "安徽"
+            },
+            {
+                "id": 15,
+                "title": "浙江"
+            },
+            {
+                "id": 16,
+                "title": "福建"
+            },
+            {
+                "id": 17,
+                "title": "湖北"
+            },
+            {
+                "id": 18,
+                "title": "湖南"
+            },
+            {
+                "id": 19,
+                "title": "广东"
+            },
+            {
+                "id": 20,
+                "title": "广西"
+            },
+            {
+                "id": 21,
+                "title": "江西"
+            },
+            {
+                "id": 22,
+                "title": "四川"
+            },
+            {
+                "id": 23,
+                "title": "海南"
+            },
+            {
+                "id": 24,
+                "title": "贵州"
+            },
+            {
+                "id": 25,
+                "title": "云南"
+            },
+            {
+                "id": 26,
+                "title": "西藏"
+            },
+            {
+                "id": 27,
+                "title": "陕西"
+            },
+            {
+                "id": 28,
+                "title": "甘肃"
+            },
+            {
+                "id": 29,
+                "title": "青岛"
+            },
+            {
+                "id": 30,
+                "title": "宁夏"
+            },
+            {
+                "id": 31,
+                "title": "新疆"
+            },
+            {
+                "id": 32,
+                "title": "港澳"
+            },
+            {
+                "id": 33,
+                "title": "台湾"
+            },
+            {
+                "id": 34,
+                "title": "钓鱼岛"
+            },
+            {
+                "id": 35,
+                "title": "海外"
+            }
+        ],
+        "swiper2": [
+            {
+                "id": 1,
+                "title": "待处理订单"
+            },
+            {
+                "id": 2,
+                "title": "我的问答"
+            },
+            {
+                "id": 3,
+                "title": "商品降价"
+            },
+            {
+                "id": 4,
+                "title": "返修退换货"
+            },
+            {
+                "id": 5,
+                "title": "我的关注"
+            }
+        ],
+        "swiper3": [
+            {
+                "id": 1,
+                "title": "我的京豆"
+            },
+            {
+                "id": 2,
+                "title": "我的优惠券"
+            },
+            {
+                "id": 3,
+                "title": "我的白条"
+            },
+            {
+                "id": 4,
+                "title": "我的理财"
+            }
+        ],
+        "swiper4": [
+            {
+                "id": 1,
+                "title": "帮助中心"
+            },
+            {
+                "id": 2,
+                "title": "售后服务"
+            },
+            {
+                "id": 3,
+                "title": "在线客服"
+            },
+            {
+                "id": 4,
+                "title": "意见建议"
+            },
+            {
+                "id": 5,
+                "title": "电话客服"
+            },
+            {
+                "id": 6,
+                "title": "客服邮箱"
+            },
+            {
+                "id": 7,
+                "title": "金融咨询"
+            },
+            {
+                "id": 8,
+                "title": "全球售客服"
+            },
+            {
+                "id": 9,
+                "title": "企业客服"
+            }
+        ],
+        "searchText": [
+            {
+                "id": 1,
+                "title": "书包好物节"
+            },
+            {
+                "id": 2,
+                "title": "京造618"
+            },
+            {
+                "id": 3,
+                "title": "鞋靴晚8"
+            },
+            {
+                "id": 4,
+                "title": "一加手机"
+            },
+            {
+                "id": 5,
+                "title": "百丽超值"
+            },
+            {
+                "id": 6,
+                "title": "数码钜惠"
+            },
+            {
+                "id": 7,
+                "title": "低价手机"
+            },
+            {
+                "id": 8,
+                "title": "顾家自营"
+            },
+            {
+                "id": 9,
+                "title": "京选装修"
+            }
+        ]
+    },
+    {
+        "rotation": [
+            {
+                "id": 1,
+                "pic":"../images/sw-1.png.avif"
+            },
+            {
+                "id": 2,
+                "pic":"../images/sw-2.jpg"
+            },
+            {
+                "id": 3,
+                "pic":"../images/sw-3.jpg"
+            },
+            {
+                "id": 4,
+                "pic":"../images/sw-4.jpg.avif"
+            },
+            {
+                "id": 5,
+                "pic":"../images/sw-5.png.avif"
+            },
+            {
+                "id": 6,
+                "pic":"../images/sw-6.jpg"
+            },
+            {
+                "id": 7,
+                "pic":"../images/sw-7.jpg"
+            }
+        ],
+        "rotation1":[
+            {
+                "id": 1,
+                "pic":"../images/d-w1.png.avif",
+                "pic1":"../images/d-w2.png.avif",
+                "pic2":"../images/d-w3.jpg.avif"
+            },
+            {
+                "id": 2,
+                "pic":"../images/d-w4.png.avif",
+                "pic1":"../images/d-w5.jpg.avif",
+                "pic2":"../images/d-w6.png.avif"
+            },
+            {
+                "id": 3,
+                "pic":"../images/d-w7.jpg.avif",
+                "pic1":"../images/d-w8.png.avif",
+                "pic2":"../images/d-w9.png.avif"
+            }
+        ],
+        "service":[
+            {
+                "id":1,
+                "pic":"images/news_JD/li-1.png",
+                "pic1":"images/news_JD/li-1_hover.png",
+                "title":"企业购"
+            },
+            {
+                "id":2,
+                "pic":"images/news_JD/li-2.png",
+                "pic1":"images/news_JD/li-2_hover.png",
+                "title":"白条"
+            },
+            {
+                "id":3,
+                "pic":"images/news_JD/li-3.png",
+                "pic1":"images/news_JD/li-3_hover.png",
+                "title":"火车票"
+            },
+            {
+                "id":4,
+                "pic":"images/news_JD/li-4.png",
+                "pic1":"images/news_JD/li-4_hover.png",
+                "title":"酒店"
+            },
+            {
+                "id":5,
+                "pic":"images/news_JD/li-5.png",
+                "pic1":"images/news_JD/li-5_hover.png",
+                "title":"加油卡"
+            },
+            {
+                "id":6,
+                "pic":"images/news_JD/li-6.png",
+                "pic1":"images/news_JD/li-6_hover.png",
+                "title":"礼品卡"
+            },
+            {
+                "id":7,
+                "pic":"images/news_JD/li-7.png",
+                "pic1":"images/news_JD/li-7_hover.png",
+                "title":"游戏"
+            },
+            {
+                "id":8,
+                "pic":"images/news_JD/li-8.png",
+                "pic1":"images/news_JD/li-8_hover.png",
+                "title":"机票"
+            },
+            {
+                "id":9,
+                "pic":"images/news_JD/li-9.png",
+                "pic1":"images/news_JD/li-9_hover.png",
+                "title":"五金城"
+            },
+            {
+                "id":10,
+                "pic":"images/news_JD/li-10.png",
+                "pic1":"images/news_JD/li-10_hover.png",
+                "title":"电影票"
+            },
+            {
+                "id":11,
+                "pic":"images/news_JD/li-11.png",
+                "pic1":"images/news_JD/li-11_hover.png",
+                "title":"话费"
+            }, {
+                "id":12,
+                "pic":"images/news_JD/li-12.png",
+                "pic1":"images/news_JD/li-12_hover.png",
+                "title":"云建站"
+            }
+        ],
+        "seckill":[
+            {
+                "id":1,
+                "pic":"images/seckill-1.jpg.avif",
+                "title":"摩威保 迷你小型加湿器usb插电有氛围灯可除异味空气氧吧学生宿舍卧室办公室空调房补水 水滴【冰川白】大雾量220ML丨插线款 迷你加湿器",
+                "mon":"9.9",
+                "pic1":"images/seckill-2.jpg.avif",
+                "title1":"施耐德健腹轮自动回弹肘撑收腹练腹肌轮健身器材卷腹神器男家用滚轮腹部 【升级计时款】动力橙（自动回弹/跪垫）",
+                "mon1":"74",
+                "pic2":"images/seckill-3.jpg.avif",
+                "title2":"固特（GUTE）防溅延伸器增压起泡器厨房通用万向旋转水龙头转接头出水嘴过滤器 黄铜接头+ABS两档出水-05银",
+                "mon2":"26.37",
+                "pic3":"images/seckill-4.jpg.avif",
+                "title3":"丹飞翔休闲裤男冰丝夏季九分裤男宽松束脚裤弹力男士松紧休闲潮流百搭速干哈伦小脚裤子男 黑色+灰色(2件装) 2XL 125-145斤",
+                "mon3":"35"
+            },
+            {
+                "id":2,
+                "pic":"images/seckill-5.jpg.avif",
+                "title":"何王子2023新茶四川绿茶蒙顶山甘露浓香型蒙顶茶叶明前高山云雾碧螺春 250g",
+                "mon":"48",
+                "pic1":"images/seckill-6.jpg.avif",
+                "title1":"佐竹精工 鱼竿手竿台钓竿碳素鲤鱼竿超轻超硬碳素长节28调钓鱼竿碳素 5.4米鱼竿+支架+礼包",
+                "mon1":"109",
+                "pic2":"images/seckill-7.jpg.avif",
+                "title2":"麦如父亲节礼物实用送爸爸保温杯男士茶水分离泡茶杯子生日礼物男高档 316不锈钢茶水分离杯男士保温杯智能显温",
+                "mon2":"148",
+                "pic3":"images/seckill-8.jpg.avif",
+                "title3":"南极人抗菌床垫子1.8米*2米榻榻米加厚褥子1.5*2米宿舍90*190床褥子 米兰浅灰【约4cm】 1.5x1.9m【 拒绝塌陷 双人款】",
+                "mon3":"69.9"
+            }
+        ]
+    },
+    {
+        "promotion":[
+            {
+                "id":1,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-1.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"免费定制服务",
+                "title1":"京东定制"
+            },
+            {
+                "id":2,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-2.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"ipone减1870元",
+                "title1":"购机补贴"
+            },
+            {
+                "id":3,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-3.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"每满300减50",
+                "title1":"京东服饰"
+            },
+            {
+                "id":4,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-4.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"每满300减50",
+                "title1":"粮油食省新"
+            },
+            {
+                "id":5,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-5.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"每满300减50",
+                "title1":"服装美妆爆品"
+            },
+            {
+                "id":6,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-6.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"788元新人礼包",
+                "title1":"企业福利"
+            },
+            {
+                "id":7,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-7.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"满200-20",
+                "title1":"1号会员店"
+            },
+            {
+                "id":8,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-8.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"不止买一赠一",
+                "title1":"美妆护肤"
+            },
+            {
+                "id":9,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-9.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"低至7折",
+                "title1":"清洁包装仓储"
+            },
+            {
+                "id":10,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-10.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"在抢70元神券",
+                "title1":"京东超市618"
+            },
+            {
+                "id":11,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-11.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"叠券300减120",
+                "title1":"京东图书"
+            },
+            {
+                "id":12,
+                "pic":"images/promotion-bgi.png!cc_190x210.avif",
+                "pic1":"images/promotion-12.jpg!cc_130x130.avif",
+                "pic2":"images/promotion-desc.png!cc_190x32.avif",
+                "title":"1元抢购",
+                "title1":"盛夏狂欢"
+            }
+        ]
+    }
+]

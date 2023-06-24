@@ -263,51 +263,51 @@
         "rotation": [
             {
                 "id": 1,
-                "pic":"../images/sw-1.png.avif"
+                "pic":"images/sw-1.png.avif"
             },
             {
                 "id": 2,
-                "pic":"../images/sw-2.jpg"
+                "pic":"images/sw-2.jpg"
             },
             {
                 "id": 3,
-                "pic":"../images/sw-3.jpg"
+                "pic":"images/sw-3.jpg"
             },
             {
                 "id": 4,
-                "pic":"../images/sw-4.jpg.avif"
+                "pic":"images/sw-4.jpg.avif"
             },
             {
                 "id": 5,
-                "pic":"../images/sw-5.png.avif"
+                "pic":"images/sw-5.png.avif"
             },
             {
                 "id": 6,
-                "pic":"../images/sw-6.jpg"
+                "pic":"images/sw-6.jpg"
             },
             {
                 "id": 7,
-                "pic":"../images/sw-7.jpg"
+                "pic":"images/sw-7.jpg"
             }
         ],
         "rotation1":[
             {
                 "id": 1,
-                "pic":"../images/d-w1.png.avif",
-                "pic1":"../images/d-w2.png.avif",
-                "pic2":"../images/d-w3.jpg.avif"
+                "pic":"images/d-w1.png.avif",
+                "pic1":"images/d-w2.png.avif",
+                "pic2":"images/d-w3.jpg.avif"
             },
             {
                 "id": 2,
-                "pic":"../images/d-w4.png.avif",
-                "pic1":"../images/d-w5.jpg.avif",
-                "pic2":"../images/d-w6.png.avif"
+                "pic":"images/d-w4.png.avif",
+                "pic1":"images/d-w5.jpg.avif",
+                "pic2":"images/d-w6.png.avif"
             },
             {
                 "id": 3,
-                "pic":"../images/d-w7.jpg.avif",
-                "pic1":"../images/d-w8.png.avif",
-                "pic2":"../images/d-w9.png.avif"
+                "pic":"images/d-w7.jpg.avif",
+                "pic1":"images/d-w8.png.avif",
+                "pic2":"images/d-w9.png.avif"
             }
         ],
         "service":[
@@ -513,6 +513,14 @@
                 "pic2":"images/promotion-desc.png!cc_190x32.avif",
                 "title":"1元抢购",
                 "title1":"盛夏狂欢"
+            }
+        ]
+    },
+    {
+        "inner_list1":[
+            {
+                "pic":"images/more_item-img-1.jpg.avif",
+                "title":"石头（roborock）扫地机器人G10S Pure 扫拖洗烘一体机擦地机拖地机 全自动清洗集尘烘干补水 基站自清洁"
             }
         ]
     }

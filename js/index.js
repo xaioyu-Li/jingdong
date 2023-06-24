@@ -355,7 +355,6 @@ function lazyLoad() {
     if (!imgs.length) return;
     imgs.forEach(img => {
         const rect = img.getBoundingClientRect();
-        console.log(rect);
         if (rect.top < window.innerHeight) {
             img.src = img.dataset.src;
             img.removeAttribute('data-src'); // 我们是通过img[data-src]查找所有img标签的，渲染后就删除data-src可减少forEach循环的计算成本
@@ -365,7 +364,7 @@ function lazyLoad() {
 // 全局监听scroll滚动事件
 window.addEventListener('scroll', throttle(() => {
     lazyLoad();
-}, 100));
+}, 1000));
 // 初始化的时候执行一下加载图片的函数
 lazyLoad();
 
@@ -418,7 +417,10 @@ window.addEventListener('scroll', (event) => {
         elevator.classList.remove('current')
     }
 });
+let Obtain = function Obtain() {
 
+}
+Obtain()
 /* 为你推荐 */
 function tab() {
     let recommendTabItem = document.querySelectorAll('.recommend-tab-item');

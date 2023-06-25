@@ -369,6 +369,12 @@ body {
     background-color: #fff;
     z-index: 10;
 }
+.search-list li{
+    height: 25px;
+    line-height: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
 
 /* 搜索框中拍照样式 */
 .photo a i {

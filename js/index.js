@@ -465,7 +465,7 @@ let fallsModule = (function () {
             })
         }
     }
-    /* window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
@@ -475,9 +475,9 @@ let fallsModule = (function () {
             }
 
         }
-    }) */
+    })
     tab();
-    let loadmorebox = document.querySelector('.loadmore');
+    /* let loadmorebox = document.querySelector('.loadmore');
     const loadmore = function loadmore() {
         let count = 0;
         let ob2 = new IntersectionObserver(changes => {
@@ -503,9 +503,8 @@ let fallsModule = (function () {
             }
             loadmore()
         }
-    }
+    } */
 })()
-fallsModule.init();
 /* 图片懒加载 */
 let loadimg = function loadimg() {
     function throttle(fn, delay = 200) {

@@ -1612,7 +1612,7 @@ swiper-slide swiper-slide-active .seckill-list .mySwiperThree {
     width: 1190px;
     height: auto;
     margin: auto;
-    display: none;
+   /*  display: none; */
 }
 
 .tab-inner_list {

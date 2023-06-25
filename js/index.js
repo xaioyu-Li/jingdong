@@ -77,7 +77,6 @@ document.querySelector('.search-box').addEventListener('input', function (e) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             data = JSON.parse(xhr.response)
-            //console.log(data);
         };
     };
     xhr.send();
@@ -218,8 +217,6 @@ document.querySelector('.search-box').addEventListener('input', function (e) {
         `
         });
         swiperWrapper1.innerHTML = rot1;
-
-
         let seckillList = document.querySelector('.seckill-list .mySwiperThree .swiper-wrapper');
         let seckill = data[1].seckill;
         let sec = ``;
@@ -313,67 +310,44 @@ document.querySelector('.search-box').addEventListener('input', function (e) {
         myJdList.style.display = "none";
     });
 })();
-var mySwiperOne = new Swiper('.mySwiperTwo', {
+var mySwiper = new Swiper('.mySwiperTwo', {
     effect: "fade",
-    direction: 'horizontal', // 垂直切换选项
-    loop: true, // 循环模式选项
-    autoplay: true,//自动播放
+    direction: 'horizontal',
+    loop: true,
+    autoplay: true,
     autoplay: {
-        delay: 8000,//1秒切换一次
+        delay: 8000,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 });
+mySwiper.el.onmouseover = function () {
+    mySwiper.navigation.$nextEl.removeClass('hide');
+    mySwiper.navigation.$prevEl.removeClass('hide');
+}
+mySwiper.el.onmouseout = function () {
+    mySwiper.navigation.$nextEl.addClass('hide');
+    mySwiper.navigation.$prevEl.addClass('hide');
+}
 var mySwiperThree = new Swiper('.mySwiperThree', {
-    direction: 'horizontal', // 垂直切换选项
-    loop: true, // 循环模式选项
-
-    // 如果需要分页器
+    direction: 'horizontal',
+    loop: true,
     pagination: {
         el: '.swiper-pagination',
     },
-
-    // 如果需要前进后退按钮
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 })
-
-/* 图片懒加载 */
-function throttle(fn, delay = 200) {
-    let timer = null;
-    return function () {
-        if (timer) return;
-        timer = setTimeout(() => {
-            fn.apply(this, arguments);
-            timer = null;
-        }, delay);
-    };
-}
-// 懒加载-回调函数
-function lazyLoad() {
-    const imgs = document.querySelectorAll('img[data-src]');
-    if (!imgs.length) return;
-    imgs.forEach(img => {
-        const rect = img.getBoundingClientRect();
-        if (rect.top < window.innerHeight) {
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src'); // 我们是通过img[data-src]查找所有img标签的，渲染后就删除data-src可减少forEach循环的计算成本
-        }
-    })
-}
-// 全局监听scroll滚动事件
-window.addEventListener('scroll', throttle(() => {
-    lazyLoad();
-}, 1000));
-// 初始化的时候执行一下加载图片的函数
-lazyLoad();
-
 /* 倒计时 */
 window.onload = function () {
     var hour = document.querySelector('.countdown-time_hour');
     var minute = document.querySelector('.countdown-time_minute');
     var second = document.querySelector('.countdown-time_second');
-    var inputTimes = +new Date('2023-06-18 21:00:00');
+    var inputTimes = +new Date('2023-06-27 21:00:00');
     conutTime();
     setInterval(conutTime, 1000);
     function conutTime() {
@@ -391,21 +365,6 @@ window.onload = function () {
     }
 }
 /* 右侧滚动导航栏 */
-
-// let hideTop = document.querySelector(".hide-top");
-// console.log(hideTop);
-// window.addEventListener("scroll", function(e) {
-//     if (document.documentElement.scrollTop >= document.querySelector(".second-kill").offsetTop) {
-//         document.querySelector(".hide-top").style.display = "block";
-//         document.querySelector("aside").classList.add("current");
-//         document.querySelector("aside .backTop").style.display = "block";
-//     } else {
-//         document.querySelector(".hide-top").style.display = "none";
-//         document.querySelector("aside").classList.remove("current");
-//         document.querySelector("aside .backTop").style.display = "none";
-//     }
-// });
-
 let elevator = document.querySelector('.elevator');
 let box = document.querySelector('.box');
 window.addEventListener('scroll', (event) => {
@@ -417,28 +376,186 @@ window.addEventListener('scroll', (event) => {
         elevator.classList.remove('current')
     }
 });
-let Obtain = function Obtain() {
-
-}
-Obtain()
-/* 为你推荐 */
-function tab() {
-    let recommendTabItem = document.querySelectorAll('.recommend-tab-item');
-    let recommendTabInner = document.querySelectorAll('.recommend-tab-inner');
-    if (recommendTabInner.length > 0) {
-        recommendTabInner[0].style.display = 'block';
+document.querySelector('.elevator-a1').addEventListener('click', function () {
+    window.scrollTo(0, 600);
+});
+document.querySelector('.elevator-a2').addEventListener('click', function () {
+    window.scrollTo(0, 1000);
+});
+document.querySelector('.elevator-a3').addEventListener('click', function () {
+    window.scrollTo(0, 1500);
+});
+document.querySelector('.elevator-a4').addEventListener('click', function () {
+    window.scrollTo(0, 2100);
+});
+let fallsModule = (function () {
+    let Obtain = function Obtain() {
+        let data;
+        let xhr = new XMLHttpRequest();
+        xhr.open("get", "./js/data.json", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                data = JSON.parse(xhr.response)
+            };
+        };
+        xhr.send();
     }
-    for (let i = 0; i < recommendTabItem.length; i++) {
-        let tabItem = recommendTabItem[i];
-        let TabInner = recommendTabInner[i];
-        tabItem.addEventListener('click', () => {
-            for (let j = 0; j < recommendTabItem.length; j++) {
-                recommendTabItem[j].classList.remove("tab-item_selected");
-                recommendTabInner[j].style.display = 'none'
+    function tab() {
+        let tabInnerList = document.querySelector('.tab-inner_list')
+        let recommendTabItem = document.querySelectorAll('.recommend-tab-item');
+        for (let i = 0; i < recommendTabItem.length; i++) {
+            let tabItem = recommendTabItem[i];
+            tabItem.addEventListener('click', () => {
+                tabInnerList.innerHTML = ''
+                for (let j = 0; j < recommendTabItem.length; j++) {
+                    recommendTabItem[j].classList.remove('tab-item_selected')
+                }
+                tabItem.classList.add('tab-item_selected')
+                loadData(i);
+            });
+        }
+    }
+    function loadData(i) {
+        let tabInnerList = Array.from(document.querySelectorAll('.tab-inner_list'))
+        Obtain()
+        let inner_list = 'inner_list' + i
+        let innerList = data[3][inner_list]
+        let q = 0, group;
+        for (; q < innerList.length; q += 5) {
+            group = data[3][inner_list].slice(q, q + 5);
+            group.sort((a, b) => a.height - b.height);
+            tabInnerList.sort((a, b) => b.offsetHeight - a.offsetHeight);
+            let inner = ``
+            group.forEach(item => {
+                let tabInnerList = document.querySelector('.tab-inner_list')
+                let { id, pic, title, cash, Fraction } = item;
+                let LI = document.createElement('li')
+                LI.className = 'more_item'
+                LI.innerHTML = `
+                <li class="more_item" data-id="${id}">
+                    <a href="">
+                        <div class="more-img">
+                            <img src="" data-src="${pic}" alt="">
+                        </div>
+                        <div class="more-info">
+                            <p class="more-info-name">
+                                <span>自营</span>
+                                ${title}
+                            </p>
+                        </div>
+                        <dic class="more-info-price">
+                            <i>¥</i>
+                            <span class="more-info-price-txt">
+                                ${cash}.
+                                <span>${Fraction}0</span>
+                            </span>
+                        </dic>
+                        <div class="more_item-hover">
+                            <div class="more_item-hd">
+                                <div class="more_item-btn">
+                                    <i></i>
+                                    <span>找相似</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            `
+                tabInnerList.appendChild(LI)
+            })
+        }
+    }
+    /* window.addEventListener('scroll', () => {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+        if (documentHeight - windowHeight - scrollPosition < 200) {
+            for (let i = 0; i < 6; i++) {
+                loadData(i)
             }
-            tabItem.classList.add("tab-item_selected");
-            TabInner.style.display = 'block'
-        });
+
+        }
+    }) */
+    tab();
+    let loadmorebox = document.querySelector('.loadmore');
+    const loadmore = function loadmore() {
+        let count = 0;
+        let ob2 = new IntersectionObserver(changes => {
+            let { isIntersecting } = changes[0];
+            if (isIntersecting) {
+                count++;
+                if (count > 3) {
+                    ob2.unobserve(loadmorebox);
+                    return;
+                }
+                for (let i = 0; i < 6; i++) {
+                    loadData(i)
+                }
+
+            }
+        })
+        ob2.observe(loadmorebox);
     }
+    return {
+        init() {
+            for (let i = 0; i < 6; i++) {
+                loadData(i)
+            }
+            loadmore()
+        }
+    }
+})()
+fallsModule.init();
+/* 图片懒加载 */
+let loadimg = function loadimg() {
+    function throttle(fn, delay = 200) {
+        let timer = null;
+        return function () {
+            if (timer) return;
+            timer = setTimeout(() => {
+                fn.apply(this, arguments);
+                timer = null;
+            }, delay);
+        };
+    }
+    function lazyLoad() {
+        const imgs = document.querySelectorAll('img[data-src]');
+        if (!imgs.length) return;
+        imgs.forEach(img => {
+            const rect = img.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+            }
+        })
+    }
+    window.addEventListener('scroll', throttle(() => {
+        lazyLoad();
+    }, 1000));
+    lazyLoad();
 }
-tab();
+loadimg()
+/* 
+let loadmore = function loadmore() {
+            let count = 0;
+            let HTML = document.documentElement || document.body;
+            if (HTML.scrollTop + HTML.clientHeight + 100 >= HTML.scrollHeight) {
+                count++
+                if (count > 3) {
+                    ob2.unobserve(loadmorebox);
+                    return;
+                };
+                loadData(i);
+            }
+        }
+        return {
+            init() {
+                loadData(i);
+                loadmore()
+                window.onscroll = throttle(function () {
+                    lazyloadimgs();
+                    loadmore();
+                }, 500);
+            }
+        }
+*/
